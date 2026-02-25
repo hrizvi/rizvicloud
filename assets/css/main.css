@@ -2698,7 +2698,7 @@ input, select, textarea {
 
 		.myWorld.left, .myWorld.right {
 			width: 40%;
-			max-width: 15rem;
+			max-width: 12rem;
 		}
 
 			.myWorld.left img, .myWorld.right img {
