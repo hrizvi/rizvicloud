@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YKI Swedish A2 Master Guide</title>
+  <style>
+    :root {
+      --primary: #1a365d;
+      --secondary: #2b6cb0;
+      --verb-color: #e53e3e;
+      --subject-color: #2f855a;
+      --time-color: #3182ce;
+      --neg-color: #d69e2e;
+      --bg: #f7fafc;
+      --card-bg: #ffffff;
+      --text: #2d3748;
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1a365d 0%, #2b6cb0 100%);
+      color: white;
+      padding: 30px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    h1 { margin: 0 0 10px 0; font-size: 2rem; }
+    .subtitle { opacity: 0.9; font-size: 1.1rem; }
+
+    .card {
+      background: var(--card-bg);
+      padding: 25px;
+      border-radius: 10px;
+      margin-bottom: 25px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      border-left: 5px solid var(--secondary);
+    }
+
+    h2 { color: var(--primary); margin-top: 0; border-bottom: 2px solid #edf2f7; padding-bottom: 8px; }
+    h3 { color: var(--secondary); margin-top: 20px; }
+
+    .tag {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-weight: bold;
+      font-size: 0.85rem;
+      color: white;
+      margin: 2px;
+    }
+    .tag-verb { background-color: var(--verb-color); }
+    .tag-subject { background-color: var(--subject-color); }
+    .tag-time { background-color: var(--time-color); }
+    .tag-neg { background-color: var(--neg-color); }
+
+    /* BIFF Layout Visualizer */
+    .biff-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 20px 0;
+    }
+
+    .biff-car {
+      flex: 1;
+      min-width: 130px;
+      padding: 12px;
+      border-radius: 8px;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+    }
+
+    .biff-bisats { background-color: #805ad5; }
+    .biff-sub { background-color: var(--subject-color); }
+    .biff-inte { background-color: var(--neg-color); }
+    .biff-verb { background-color: var(--verb-color); }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+
+    th, td {
+      padding: 10px 12px;
+      border: 1px solid #e2e8f0;
+      text-align: left;
+    }
+
+    th { background-color: #edf2f7; color: var(--primary); }
+    tr:nth-child(even) { background-color: #f8fafc; }
+
+    .tip-box {
+      background-color: #ebf8ff;
+      border: 1px solid #bee3f8;
+      padding: 15px;
+      border-radius: 8px;
+      margin: 15px 0;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    @media (max-width: 600px) {
+      .grid-2 { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <header>
+    <h1>🇸🇪 YKI Swedish A2 Master Guide</h1>
+    <div class="subtitle">Level A2 Grammar Mechanics, Past Tenses & Clause Structures</div>
+  </header>
+
+  <!-- 1. PAST TENSES -->
+  <div class="card">
+    <h2>1. The Past Tense System (Preteritum vs. Perfekt)</h2>
+    <p>Use <strong>Preteritum</strong> for completed actions at a specific past time. Use <strong>Perfekt</strong> (*har* + supine) when the time is unspecified or ongoing.</p>
+    
+    <table>
+      <thead>
+        <tr>
+          <th>Group</th>
+          <th>Infinitive</th>
+          <th>Preteritum (Past)</th>
+          <th>Perfekt (har + ...)</th>
+          <th>English</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Group 1 (-ade)</strong></td>
+          <td>tala</td>
+          <td>tal<strong>ade</strong></td>
+          <td>har tal<strong>at</strong></td>
+          <td>spoke / has spoken</td>
+        </tr>
+        <tr>
+          <td><strong>Group 2a (-de)</strong></td>
+          <td>ringa</td>
+          <td>ring<strong>de</strong></td>
+          <td>har ring<strong>t</strong></td>
+          <td>called / has called</td>
+        </tr>
+        <tr>
+          <td><strong>Group 2b (-te)</strong></td>
+          <td>läsa</td>
+          <td>läs<strong>te</strong></td>
+          <td>har läs<strong>t</strong></td>
+          <td>read / has read</td>
+        </tr>
+        <tr>
+          <td><strong>Group 3 (-dde)</strong></td>
+          <td>bo</td>
+          <td>bo<strong>dde</strong></td>
+          <td>har bo<strong>tt</strong></td>
+          <td>lived / has lived</td>
+        </tr>
+        <tr>
+          <td><strong>Group 4 (Irregular)</strong></td>
+          <td>skriva</td>
+          <td>skrev</td>
+          <td>har skriv<strong>it</strong></td>
+          <td>wrote / has written</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 2. SUBORDINATE CLAUSES & BIFF -->
+  <div class="card">
+    <h2>2. Subordinate Clauses & The Golden BIFF Rule</h2>
+    <p>In a subordinate clause (introduced by words like <em>eftersom, om, att, när</em>), the rule changes: <strong>BIFF = I Bisats Kommer "Inte" Före Finita Verbet</strong>.</p>
+    
+    <div class="biff-container">
+      <div class="biff-car biff-bisats">
+        <div>SUBORDINATOR</div>
+        <div style="font-size:1.1rem; margin-top:5px;">eftersom</div>
+      </div>
+      <div class="biff-car biff-sub">
+        <div>SUBJECT</div>
+        <div style="font-size:1.1rem; margin-top:5px;">jag</div>
+      </div>
+      <div class="biff-car biff-inte">
+        <div>INTE (Negation)</div>
+        <div style="font-size:1.1rem; margin-top:5px;">inte ⚠️</div>
+      </div>
+      <div class="biff-car biff-verb">
+        <div>VERB</div>
+        <div style="font-size:1.1rem; margin-top:5px;">har</div>
+      </div>
+    </div>
+
+    <div class="tip-box">
+      <strong>Main Clause vs Subordinate Clause Comparison:</strong><br>
+      • <em>Main Clause (V2):</em> Jag har <span class="tag tag-neg">inte</span> tid. (Inte AFTER verb)<br>
+      • <em>Subordinate Clause (BIFF):</em> ...eftersom jag <span class="tag tag-neg">inte</span> har tid. (Inte BEFORE verb)
+    </div>
+  </div>
+
+  <!-- 3. FUTURE EXPRESSIONS -->
+  <div class="card">
+    <h2>3. Expressing the Future in Swedish</h2>
+    
+    <div class="grid-2">
+      <div>
+        <h3>1. Ska + Infinitive</h3>
+        <p>Used when you have a <strong>plan or intention</strong>.</p>
+        <p><em>Jag <strong>ska skriva</strong> YKI-provet i november.</em></p>
+      </div>
+
+      <div>
+        <h3>2. Kommer att + Infinitive</h3>
+        <p>Used for <strong>predictions</strong> or events outside your control.</p>
+        <p><em>Det <strong>kommer att regna</strong> imorgon.</em></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. TIME PREPOSITIONS -->
+  <div class="card">
+    <h2>4. High-Yield A2 Time Prepositions</h2>
+    
+    <table>
+      <thead>
+        <tr>
+          <th>Preposition</th>
+          <th>Usage</th>
+          <th>Example Sentence</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>för ... sedan</strong></td>
+          <td>... ago (Past)</td>
+          <td>Jag kom hit <strong>för</strong> tre år <strong>sedan</strong>.</td>
+        </tr>
+        <tr>
+          <td><strong>om ...</strong></td>
+          <td>in ... (Future)</td>
+          <td>Tåget går <strong>om</strong> tio minuter.</td>
+        </tr>
+        <tr>
+          <td><strong>i ...</strong></td>
+          <td>Duration (for ...)</td>
+          <td>Jag har studerat <strong>i</strong> två timmar.</td>
+        </tr>
+        <tr>
+          <td><strong>på ...</strong></td>
+          <td>Time taken to complete</td>
+          <td>Han städade rummet <strong>på</strong> en timme.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 5. A2 VOCABULARY -->
+  <div class="card">
+    <h2>5. A2 High-Frequency YKI Vocabulary</h2>
+    
+    <table>
+      <thead>
+        <tr>
+          <th>Swedish Word</th>
+          <th>Word Class</th>
+          <th>English Meaning</th>
+          <th>Context Example</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>ansöka (ansöker)</strong></td>
+          <td>Verb</td>
+          <td>to apply</td>
+          <td>Jag vill ansöka om ett nytt jobb.</td>
+        </tr>
+        <tr>
+          <td><strong>en erfarenhet</strong></td>
+          <td>Noun (En)</td>
+          <td>an experience</td>
+          <td>Jag har god erfarenhet av kundservice.</td>
+        </tr>
+        <tr>
+          <td><strong>ett förslag</strong></td>
+          <td>Noun (Ett)</td>
+          <td>a suggestion / proposal</td>
+          <td>Har du ett bättre förslag?</td>
+        </tr>
+        <tr>
+          <td><strong>klaga (klagar)</strong></td>
+          <td>Verb</td>
+          <td>to complain</td>
+          <td>Kunden vill klaga på maten.</td>
+        </tr>
+        <tr>
+          <td><strong>eftersom</strong></td>
+          <td>Subordinator</td>
+          <td>because / since</td>
+          <td>Jag kom för sent eftersom bussen var försenad.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+</body>
+</html>
