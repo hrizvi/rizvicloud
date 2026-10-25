@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YKI Swedish A1 Complete Study Guide</title>
+  <style>
+    :root {
+      --primary: #1a365d;
+      --secondary: #2b6cb0;
+      --verb-color: #e53e3e;
+      --subject-color: #2f855a;
+      --time-color: #3182ce;
+      --neg-color: #d69e2e;
+      --bg: #f7fafc;
+      --card-bg: #ffffff;
+      --text: #2d3748;
+    }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1a365d 0%, #2b6cb0 100%);
+      color: white;
+      padding: 30px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    h1 { margin: 0 0 10px 0; font-size: 2rem; }
+    .subtitle { opacity: 0.9; font-size: 1.1rem; }
+
+    .card {
+      background: var(--card-bg);
+      padding: 25px;
+      border-radius: 10px;
+      margin-bottom: 25px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      border-left: 5px solid var(--secondary);
+    }
+
+    h2 { color: var(--primary); margin-top: 0; border-bottom: 2px solid #edf2f7; padding-bottom: 8px; }
+    h3 { color: var(--secondary); margin-top: 20px; }
+
+    .tag {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-weight: bold;
+      font-size: 0.85rem;
+      color: white;
+      margin: 2px;
+    }
+    .tag-verb { background-color: var(--verb-color); }
+    .tag-subject { background-color: var(--subject-color); }
+    .tag-time { background-color: var(--time-color); }
+    .tag-neg { background-color: var(--neg-color); }
+
+    .train-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 20px 0;
+    }
+
+    .train-car {
+      flex: 1;
+      min-width: 140px;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+    }
+
+    .car-pos1 { background-color: var(--time-color); }
+    .car-pos2 { background-color: var(--verb-color); border: 3px solid #9b2c2c; }
+    .car-pos3 { background-color: var(--subject-color); }
+    .car-pos4 { background-color: #718096; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+    }
+
+    th, td {
+      padding: 10px 12px;
+      border: 1px solid #e2e8f0;
+      text-align: left;
+    }
+
+    th { background-color: #edf2f7; color: var(--primary); }
+    tr:nth-child(even) { background-color: #f8fafc; }
+
+    .tip-box {
+      background-color: #ebf8ff;
+      border: 1px solid #bee3f8;
+      padding: 15px;
+      border-radius: 8px;
+      margin: 15px 0;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    @media (max-width: 600px) {
+      .grid-2 { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <header>
+    <h1>🇸🇪 YKI Swedish A1 Master Guide</h1>
+    <div class="subtitle">Complete CEFR A1 Learning Material & Reference Handbook</div>
+  </header>
+
+  <!-- 1. V2 RULE -->
+  <div class="card">
+    <h2>1. The V2 Train Model (Sentence Architecture)</h2>
+    <p>In Swedish main clauses, <strong>the conjugated verb MUST always sit in Position 2</strong>.</p>
+    
+    <div class="train-container">
+      <div class="train-car car-pos1">
+        <div>POSITION 1</div>
+        <small>Start / Time / Place</small>
+        <div style="font-size:1.1rem; margin-top:5px;">Idag</div>
+      </div>
+      <div class="train-car car-pos2">
+        <div>POSITION 2 ⚙️</div>
+        <small>Conjugated Verb</small>
+        <div style="font-size:1.1rem; margin-top:5px;">studerar</div>
+      </div>
+      <div class="train-car car-pos3">
+        <div>POSITION 3</div>
+        <small>Subject</small>
+        <div style="font-size:1.1rem; margin-top:5px;">jag</div>
+      </div>
+      <div class="train-car car-pos4">
+        <div>POSITION 4</div>
+        <small>Object / Details</small>
+        <div style="font-size:1.1rem; margin-top:5px;">svenska.</div>
+      </div>
+    </div>
+
+    <div class="tip-box">
+      <strong>Rule:</strong> If you start with a time phrase (<span class="tag tag-time">Idag</span>), the subject (<span class="tag tag-subject">jag</span>) moves behind the verb (<span class="tag tag-verb">studerar</span>).
+    </div>
+  </div>
+
+  <!-- 2. NOUNS & PLURALS -->
+  <div class="card">
+    <h2>2. Noun Forms & The 5 Plural Groups</h2>
+    <p>Nouns belong to <strong>En-words (~80%)</strong> or <strong>Ett-words (~20%)</strong>.</p>
+    
+    <table>
+      <thead>
+        <tr>
+          <th>Group</th>
+          <th>Rule / Condition</th>
+          <th>Singular Indefinite</th>
+          <th>Plural Indefinite</th>
+          <th>Plural Definite</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Group 1 (-or)</strong></td>
+          <td>En-words ending in -a</td>
+          <td>en flicka</td>
+          <td>flickor</td>
+          <td>flickorna</td>
+        </tr>
+        <tr>
+          <td><strong>Group 2 (-ar)</strong></td>
+          <td>En-words ending in -e or 1 syllable</td>
+          <td>en bil / en pojke</td>
+          <td>bilar / pojkar</td>
+          <td>bilarna / pojkarna</td>
+        </tr>
+        <tr>
+          <td><strong>Group 3 (-er)</strong></td>
+          <td>En-words (stressed/international)</td>
+          <td>en katt / en minut</td>
+          <td>katter / minuter</td>
+          <td>katterna / minuterna</td>
+        </tr>
+        <tr>
+          <td><strong>Group 4 (-n)</strong></td>
+          <td>Ett-words ending in a vowel</td>
+          <td>ett äpple / ett konto</td>
+          <td>äpplen / konton</td>
+          <td>äpplena / kontona</td>
+        </tr>
+        <tr>
+          <td><strong>Group 5 (No change)</strong></td>
+          <td>Ett-words ending in a consonant</td>
+          <td>ett hus / ett barn</td>
+          <td>hus / barn</td>
+          <td>husen / barnen</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 3. VERBS & MODALS -->
+  <div class="card">
+    <h2>3. Verbs: Present Tense & Modal System</h2>
+    <p>Present tense verbs end in <strong>-r</strong>. Modal verbs take a second verb in the <strong>infinitive (-a)</strong>.</p>
+
+    <div class="grid-2">
+      <div>
+        <h3>Present Tense Groups</h3>
+        <ul>
+          <li><strong>Group 1 (-ar):</strong> tala &rarr; <em>talar</em></li>
+          <li><strong>Group 2 (-er):</strong> läsa &rarr; <em>läser</em></li>
+          <li><strong>Group 3 (-r):</strong> bo &rarr; <em>bor</em></li>
+          <li><strong>Group 4 (Irregular):</strong> vara &rarr; <em>är</em>, gå &rarr; <em>går</em></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Modal Verbs</h3>
+        <ul>
+          <li><strong>kan</strong> (can) &rarr; <em>Jag kan prata.</em></li>
+          <li><strong>vill</strong> (want to) &rarr; <em>Han vill köpa.</em></li>
+          <li><strong>måste</strong> (must) &rarr; <em>Vi måste studera.</em></li>
+          <li><strong>ska</strong> (will) &rarr; <em>Jag ska skriva.</em></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. POSSESSIVES & ADJECTIVES -->
+  <div class="card">
+    <h2>4. Possessives & Adjective Agreement</h2>
+    
+    <h3>Possessive Pronouns</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Subject</th>
+          <th>En-word</th>
+          <th>Ett-word</th>
+          <th>Plural</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Jag</strong></td>
+          <td>min bil</td>
+          <td>mitt hus</td>
+          <td>mina barn</td>
+        </tr>
+        <tr>
+          <td><strong>Du</strong></td>
+          <td>din bil</td>
+          <td>ditt hus</td>
+          <td>dina barn</td>
+        </tr>
+        <tr>
+          <td><strong>Vi</strong></td>
+          <td>vår bil</td>
+          <td>vårt hus</td>
+          <td>våra barn</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Adjective Agreement</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Base (En-word)</th>
+          <th>+T (Ett-word)</th>
+          <th>+A (Plural)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>en <strong>stor</strong> bil</td>
+          <td>ett <strong>stort</strong> hus</td>
+          <td>många <strong>stora</strong> bilar</td>
+        </tr>
+        <tr>
+          <td>en <strong>finsk</strong> kvinna</td>
+          <td>ett <strong>finskt</strong> pass</td>
+          <td>många <strong>finska</strong> vänner</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 5. QUESTIONS, TIME & VOCAB -->
+  <div class="card">
+    <h2>5. Question Words, Time & Essential Vocabulary</h2>
+
+    <div class="grid-2">
+      <div>
+        <h3>Question Words</h3>
+        <ul>
+          <li><strong>Vad</strong> (What) &rarr; <em>Vad heter du?</em></li>
+          <li><strong>Vem</strong> (Who) &rarr; <em>Vem är det?</em></li>
+          <li><strong>Var</strong> (Where) &rarr; <em>Var bor du?</em></li>
+          <li><strong>När</strong> (When) &rarr; <em>När börjar provet?</em></li>
+          <li><strong>Varför</strong> (Why) &rarr; <em>Varför studerar du?</em></li>
+          <li><strong>Hur</strong> (How) &rarr; <em>Hur mår du?</em></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Days & Time</h3>
+        <ul>
+          <li><strong>Days:</strong> måndag, tisdag, onsdag, torsdag, fredag, lördag, söndag</li>
+          <li><strong>Numbers 1-10:</strong> en/ett, två, tre, fyra, fem, sex, sju, åtta, nio, tio</li>
+          <li><strong>Time:</strong> idag, imorgon, igår, på måndag</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>High-Yield A1 Vocabulary</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Swedish</th>
+          <th>English</th>
+          <th>Example</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>behöva</strong></td>
+          <td>to need</td>
+          <td>Jag behöver hjälp med min ansökan.</td>
+        </tr>
+        <tr>
+          <td><strong>ett pass</strong></td>
+          <td>a passport</td>
+          <td>Jag ansöker om ett nytt pass.</td>
+        </tr>
+        <tr>
+          <td><strong>pengar</strong></td>
+          <td>money</td>
+          <td>Pengarna är till kläder.</td>
+        </tr>
+        <tr>
+          <td><strong>klar / färdig</strong></td>
+          <td>done / ready</td>
+          <td>Uppgiften är klar.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+</body>
+</html>

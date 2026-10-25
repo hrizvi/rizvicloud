@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <title>YKI Swedish Complete Master Tutorial (A1–B1)</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+  <style>
+    :root {
+      --primary: #1a365d;
+      --secondary: #2b6cb0;
+      --accent: #d69e2e;
+      --verb-color: #e53e3e;
+      --subject-color: #2f855a;
+      --time-color: #3182ce;
+      --neg-color: #dd6b20;
+      --bg: #f7fafc;
+      --card-bg: #ffffff;
+      --text: #2d3748;
+      --border: #e2e8f0;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1a365d 0%, #2b6cb0 100%);
+      color: white;
+      padding: 35px 30px;
+      border-radius: 16px;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    h1 { margin: 0 0 10px 0; font-size: 2.2rem; font-weight: 800; letter-spacing: -0.5px; }
+    .subtitle { opacity: 0.95; font-size: 1.15rem; max-width: 750px; margin: 0 auto; }
+
+    .nav-tabs {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 25px;
+      overflow-x: auto;
+      padding-bottom: 5px;
+    }
+
+    .nav-btn {
+      background-color: #edf2f7;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 20px;
+      font-weight: 700;
+      color: var(--secondary);
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 0.9rem;
+      white-space: nowrap;
+      transition: all 0.2s;
+    }
+
+    .nav-btn:hover {
+      background-color: var(--secondary);
+      color: white;
+    }
+
+    .card {
+      background: var(--card-bg);
+      padding: 28px;
+      border-radius: 14px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+      border-left: 6px solid var(--secondary);
+    }
+
+    .card-a1 { border-left-color: #3182ce; }
+    .card-a2 { border-left-color: #38a169; }
+    .card-b1 { border-left-color: #805ad5; }
+    .card-yki { border-left-color: #dd6b20; }
+
+    h2 { color: var(--primary); margin-top: 0; font-size: 1.5rem; border-bottom: 2px solid var(--border); padding-bottom: 10px; }
+    h3 { color: var(--secondary); margin-top: 22px; font-size: 1.2rem; }
+
+    /* Visual Badges */
+    .badge {
+      display: inline-block;
+      padding: 3px 10px;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 0.8rem;
+      color: white;
+      margin: 2px;
+    }
+    .badge-verb { background-color: var(--verb-color); }
+    .badge-subject { background-color: var(--subject-color); }
+    .badge-time { background-color: var(--time-color); }
+    .badge-neg { background-color: var(--neg-color); }
+    .badge-sub { background-color: #805ad5; }
+
+    /* Tables */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0;
+      font-size: 0.95rem;
+    }
+
+    th, td {
+      padding: 12px 14px;
+      border: 1px solid var(--border);
+      text-align: left;
+    }
+
+    th { background-color: #edf2f7; color: var(--primary); font-weight: 700; }
+    tr:nth-child(even) { background-color: #f8fafc; }
+
+    /* Callout & Diagrams */
+    .visual-box {
+      background-color: #f7fafc;
+      border: 1px solid var(--border);
+      padding: 20px;
+      border-radius: 12px;
+      margin: 20px 0;
+      text-align: center;
+    }
+
+    .svg-diagram {
+      width: 100%;
+      max-width: 850px;
+      height: auto;
+      margin: 10px auto;
+      display: block;
+    }
+
+    .tip-box {
+      background-color: #ebf8ff;
+      border: 1px solid #bee3f8;
+      border-left: 5px solid #3182ce;
+      padding: 16px;
+      border-radius: 8px;
+      margin: 18px 0;
+    }
+
+    .template-box {
+      background-color: #2d3748;
+      color: #f7fafc;
+      padding: 20px;
+      border-radius: 10px;
+      font-family: 'Courier New', Courier, monospace;
+      white-space: pre-wrap;
+      margin: 18px 0;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .grid-2 { grid-template-columns: 1fr; }
+      body { padding: 10px; }
+      .card { padding: 18px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <header>
+    <h1>🇸🇪 Swedish Master Tutorial (A1–B1)</h1>
+    <div class="subtitle">Complete Visual Handbook & YKI Exam Preparation Guide with Interactive Diagrams</div>
+  </header>
+
+  <div class="nav-tabs">
+    <a href="#part1" class="nav-btn">Part 1: A1 Foundations</a>
+    <a href="#part2" class="nav-btn">Part 2: A2 Expansion</a>
+    <a href="#part3" class="nav-btn">Part 3: B1 Proficiency</a>
+    <a href="#part4" class="nav-btn">Part 4: YKI Templates</a>
+  </div>
+
+  <!-- ==================== PART 1: A1 FOUNDATIONS ==================== -->
+  <div id="part1" class="card card-a1">
+    <h2>PART 1: LEVEL A1 FOUNDATIONS & SYNTAX ARCHITECTURE</h2>
+    
+    <h3>1.1 Nouns: Gender & The 4-State Transformation</h3>
+    <p>In Swedish, nouns are either <strong>En-words (~80%)</strong> or <strong>Ett-words (~20%)</strong>. Every noun moves through 4 distinct states depending on number and definiteness.</p>
+
+    <!-- VISUAL DIAGRAM 1: NOUN TRANSFORMATION TREE -->
+    <div class="visual-box">
+      <strong>VISUAL DIAGRAM: THE 4 NOUN STATES TRANSFORMATION FLOW</strong>
+      <svg class="svg-diagram" viewBox="0 0 800 240" xmlns="http://www.w3.org/2000/svg">
+        <!-- Singular Path -->
+        <rect x="20" y="20" width="350" height="90" rx="10" fill="#ebf8ff" stroke="#3182ce" stroke-width="2"/>
+        <text x="195" y="45" text-anchor="middle" font-weight="bold" fill="#1a365d" font-size="16">SINGULAR</text>
+        <text x="195" y="70" text-anchor="middle" fill="#2d3748" font-size="14">en bil (a car)  ➔  bilen (the car)</text>
+        <text x="195" y="90" text-anchor="middle" fill="#718096" font-size="12">ett hus (a house) ➔ huset (the house)</text>
+
+        <!-- Arrow -->
+        <path d="M 380 65 L 420 65" stroke="#2b6cb0" stroke-width="3" marker-end="url(#arrow)"/>
+
+        <!-- Plural Path -->
+        <rect x="430" y="20" width="350" height="90" rx="10" fill="#feebc8" stroke="#dd6b20" stroke-width="2"/>
+        <text x="605" y="45" text-anchor="middle" font-weight="bold" fill="#7b341e" font-size="16">PLURAL</text>
+        <text x="605" y="70" text-anchor="middle" fill="#2d3748" font-size="14">många bilar  ➔  bilarna (the cars)</text>
+        <text x="605" y="90" text-anchor="middle" fill="#718096" font-size="12">många hus  ➔  husen (the houses)</text>
+
+        <!-- Explanatory Box Below -->
+        <rect x="20" y="135" width="760" height="85" rx="10" fill="#f7fafc" stroke="#cbd5e0" stroke-width="2"/>
+        <text x="400" y="160" text-anchor="middle" font-weight="bold" fill="#2b6cb0" font-size="15">💡 The Key Rule of Definite Suffixes</text>
+        <text x="400" y="185" text-anchor="middle" fill="#2d3748" font-size="13">Singular Definite attaches -en or -et to the end: bil + en = bilen | hus + et = huset</text>
+        <text x="400" y="205" text-anchor="middle" fill="#2d3748" font-size="13">Plural Definite attaches -na or -en to plural form: bilar + na = bilarna | hus + en = husen</text>
+      </svg>
+    </div>
+
+    <h4>The 5 Noun Declension Groups (Form i fokus)</h4>
+    <table>
+      <thead>
+        <tr>
+          <th>Group</th>
+          <th>Suffix</th>
+          <th>Condition</th>
+          <th>Singular Indefinite</th>
+          <th>Plural Indefinite</th>
+          <th>Plural Definite</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Group 1</strong></td><td>-or</td><td>En-words ending in -a</td><td>en flicka</td><td>flickor</td><td>flickorna</td></tr>
+        <tr><td><strong>Group 2</strong></td><td>-ar</td><td>En-words ending in -e or 1-syllable</td><td>en pojke / en bil</td><td>pojkar / bilar</td><td>pojkarna / bilarna</td></tr>
+        <tr><td><strong>Group 3</strong></td><td>-er</td><td>En-words (stressed end / international)</td><td>en katt / en minut</td><td>katter / minuter</td><td>katterna / minuterna</td></tr>
+        <tr><td><strong>Group 4</strong></td><td>-n</td><td>Ett-words ending in a vowel</td><td>ett äpple / ett konto</td><td>äpplen / konton</td><td>äpplena / kontona</td></tr>
+        <tr><td><strong>Group 5</strong></td><td>No change</td><td>Ett-words ending in a consonant</td><td>ett hus / ett barn</td><td>hus / barn</td><td>husen / barnen</td></tr>
+      </tbody>
+    </table>
+
+    <h3>1.2 The Golden V2 Rule & Train Model Architecture</h3>
+    <p>In Swedish main clauses, <strong>the conjugated verb MUST always occupy Position 2</strong>.</p>
+
+    <!-- VISUAL DIAGRAM 2: V2 TRAIN MODEL -->
+    <div class="visual-box">
+      <strong>VISUAL DIAGRAM: THE GOLDEN V2 TRAIN MODEL FOR MAIN CLAUSES</strong>
+      <svg class="svg-diagram" viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+        <!-- Train Engine (Pos 1) -->
+        <rect x="10" y="30" width="180" height="110" rx="12" fill="#3182ce"/>
+        <text x="100" y="60" text-anchor="middle" fill="white" font-weight="bold" font-size="14">POSITION 1</text>
+        <text x="100" y="80" text-anchor="middle" fill="#e2e8f0" font-size="11">Start / Time / Place</text>
+        <rect x="25" y="95" width="150" height="30" rx="6" fill="white"/>
+        <text x="100" y="115" text-anchor="middle" fill="#1a365d" font-weight="bold" font-size="14">Idag</text>
+
+        <!-- Driver Cabin (Pos 2 Verb) -->
+        <rect x="210" y="20" width="180" height="120" rx="12" fill="#e53e3e" stroke="#9b2c2c" stroke-width="3"/>
+        <text x="300" y="50" text-anchor="middle" fill="white" font-weight="bold" font-size="15">POSITION 2 ⚙️</text>
+        <text x="300" y="70" text-anchor="middle" fill="#feebc8" font-size="11">CONJUGATED VERB</text>
+        <rect x="225" y="95" width="150" height="30" rx="6" fill="white"/>
+        <text x="300" y="115" text-anchor="middle" fill="#9b2c2c" font-weight="bold" font-size="14">studerar</text>
+
+        <!-- Carriage 1 (Pos 3 Subject) -->
+        <rect x="410" y="30" width="180" height="110" rx="12" fill="#2f855a"/>
+        <text x="500" y="60" text-anchor="middle" fill="white" font-weight="bold" font-size="14">POSITION 3</text>
+        <text x="500" y="80" text-anchor="middle" fill="#c6f6d5" font-size="11">Subject (if inverted)</text>
+        <rect x="425" y="95" width="150" height="30" rx="6" fill="white"/>
+        <text x="500" y="115" text-anchor="middle" fill="#2f855a" font-weight="bold" font-size="14">jag</text>
+
+        <!-- Carriage 2 (Pos 4 Rest) -->
+        <rect x="610" y="30" width="180" height="110" rx="12" fill="#718096"/>
+        <text x="700" y="60" text-anchor="middle" fill="white" font-weight="bold" font-size="14">POSITION 4</text>
+        <text x="700" y="80" text-anchor="middle" fill="#e2e8f0" font-size="11">Object / Details</text>
+        <rect x="625" y="95" width="150" height="30" rx="6" fill="white"/>
+        <text x="700" y="115" text-anchor="middle" fill="#2d3748" font-weight="bold" font-size="14">svenska.</text>
+
+        <!-- Wheels -->
+        <circle cx="60" cy="150" r="12" fill="#2d3748"/><circle cx="140" cy="150" r="12" fill="#2d3748"/>
+        <circle cx="260" cy="150" r="14" fill="#2d3748"/><circle cx="340" cy="150" r="14" fill="#2d3748"/>
+        <circle cx="460" cy="150" r="12" fill="#2d3748"/><circle cx="540" cy="150" r="12" fill="#2d3748"/>
+        <circle cx="660" cy="150" r="12" fill="#2d3748"/><circle cx="740" cy="150" r="12" fill="#2d3748"/>
+      </svg>
+    </div>
+
+    <div class="tip-box">
+      <strong>V2 Inversion Principle:</strong> If sentence starts with Subject: <span class="badge badge-subject">Jag</span> <span class="badge badge-verb">studerar</span> <span class="badge badge-time">svenska idag</span>. If it starts with Time: <span class="badge badge-time">Idag</span> <span class="badge badge-verb">studerar</span> <span class="badge badge-subject">jag</span> svenska. The verb stays locked in Position 2!
+    </div>
+
+    <h3>1.3 Modal Verbs + Infinitive Mechanics</h3>
+    <p>When using a modal verb, the second verb stays in its base form ending in <strong>-a</strong> (Infinitive).</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Modal Verb</th>
+          <th>Meaning</th>
+          <th>Structure</th>
+          <th>Example Sentence</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>kan</strong></td><td>can / able to</td><td>kan + infinitive</td><td>Jag <strong>kan prata</strong> svenska.</td></tr>
+        <tr><td><strong>vill</strong></td><td>want to</td><td>vill + infinitive</td><td>Han <strong>vill köpa</strong> en ny bil.</td></tr>
+        <tr><td><strong>måste</strong></td><td>must / have to</td><td>måste + infinitive</td><td>Vi <strong>måste studera</strong> inför YKI.</td></tr>
+        <tr><td><strong>ska</strong></td><td>shall / will (future)</td><td>ska + infinitive</td><td>Jag <strong>ska skriva</strong> brevet idag.</td></tr>
+        <tr><td><strong>får</strong></td><td>may / allowed to</td><td>får + infinitive</td><td>Man <strong>får inte parkera</strong> här.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ==================== PART 2: A2 EXPANSION ==================== -->
+  <div id="part2" class="card card-a2">
+    <h2>PART 2: LEVEL A2 INTERMEDIATE GRAMMAR & CLAUSE EXPANSION</h2>
+
+    <h3>2.1 The Past Tense System (Preteritum vs. Perfekt)</h3>
+    <div class="grid-2">
+      <div class="tip-box" style="background:#f0fff4; border-color:#9ae6b4; border-left-color:#38a169;">
+        <strong style="color:#22543d;">Preteritum (Simple Past)</strong>
+        <p>Used when a <strong>specific time</strong> in the past is stated (e.g., <em>igår</em>, <em>förra veckan</em>, <em>år 2021</em>, <em>för tre år sedan</em>).</p>
+        <em>Ex: Jag flyttade till Finland <strong>år 2021</strong>.</em>
+      </div>
+      <div class="tip-box" style="background:#faf5ff; border-color:#e9d8fd; border-left-color:#805ad5;">
+        <strong style="color:#44337a;">Perfekt (har + Supine)</strong>
+        <p>Used when time is <strong>unspecified, ongoing, or relevant to the present</strong>.</p>
+        <em>Ex: Jag <strong>har bott</strong> i Helsingfors i tre år.</em>
+      </div>
+    </div>
+
+    <h3>2.2 Subordinate Clauses & The Golden BIFF Rule</h3>
+    <p>A subordinate clause (<em>bisats</em>) is introduced by a subordinator like <strong>eftersom, om, att, när, tills, innan</strong>.</p>
+
+    <!-- VISUAL DIAGRAM 3: BIFF RULE SWITCH -->
+    <div class="visual-box">
+      <strong>VISUAL DIAGRAM: THE BIFF RULE (I Bisats Kommer "Inte" Före Finita Verbet)</strong>
+      <svg class="svg-diagram" viewBox="0 0 800 210" xmlns="http://www.w3.org/2000/svg">
+        <!-- Main Clause Row -->
+        <rect x="10" y="20" width="780" height="70" rx="8" fill="#edf2f7" stroke="#cbd5e0"/>
+        <text x="25" y="45" font-weight="bold" fill="#1a365d" font-size="14">MAIN CLAUSE (V2 Rule): "Inte" sits AFTER the verb</text>
+        <text x="25" y="70" fill="#2d3748" font-size="15">Jag   <tspan fill="#e53e3e" font-weight="bold">har</tspan>   <tspan fill="#dd6b20" font-weight="bold">[INTE]</tspan>   tid idag.</text>
+
+        <!-- Subordinate Clause Row -->
+        <rect x="10" y="110" width="780" height="80" rx="8" fill="#fefcbf" stroke="#d69e2e" stroke-width="2"/>
+        <text x="25" y="135" font-weight="bold" fill="#744210" font-size="14">SUBORDINATE CLAUSE (BIFF Rule): "Inte" sits BEFORE the verb ⚠️</text>
+        <text x="25" y="165" fill="#2d3748" font-size="15">... eftersom jag   <tspan fill="#dd6b20" font-weight="bold">[INTE]</tspan>   <tspan fill="#e53e3e" font-weight="bold">har</tspan>   tid idag.</text>
+      </svg>
+    </div>
+
+    <h3>2.3 High-Yield Time Prepositions</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Preposition</th>
+          <th>Tense / Usage</th>
+          <th>Example Sentence</th>
+          <th>English Meaning</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>för ... sedan</strong></td><td>Past (Preteritum)</td><td>Jag kom hit <strong>för</strong> tre år <strong>sedan</strong>.</td><td>... ago</td></tr>
+        <tr><td><strong>om ...</strong></td><td>Future tense</td><td>Provet börjar <strong>om</strong> tio minuter.</td><td>in ... (time)</td></tr>
+        <tr><td><strong>i ...</strong></td><td>Ongoing duration</td><td>Jag har studerat svenska <strong>i</strong> sex månader.</td><td>for ... (duration)</td></tr>
+        <tr><td><strong>på ...</strong></td><td>Completion time</td><td>Han städade rummet <strong>på</strong> en timme.</td><td>in / within</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ==================== PART 3: B1 PROFICIENCY ==================== -->
+  <div id="part3" class="card card-b1">
+    <h2>PART 3: LEVEL B1 ADVANCED GRAMMAR & PROFICIENCY</h2>
+
+    <h3>3.1 Advanced Transition Connectors</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>Connector</th>
+          <th>Grammar Effect</th>
+          <th>Example Sentence</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Reason</strong></td><td>eftersom / på grund av</td><td>Subordinate clause / Noun phrase</td><td>Bussen var försenad <strong>på grund av</strong> snöstormen.</td></tr>
+        <tr><td><strong>Concession</strong></td><td>trots att / dock</td><td>BIFF / Main clause inversion</td><td>Han jobbade <strong>trots att</strong> han var sjuk.</td></tr>
+        <tr><td><strong>Correlative</strong></td><td>å ena sidan... å andra sidan</td><td>Main clause inversion</td><td><strong>Å ena sidan</strong> är det dyrt, <strong>å andra sidan</strong> är det bra.</td></tr>
+        <tr><td><strong>Purpose</strong></td><td>för att (+ infinitive)</td><td>Infinitive phrase</td><td>Jag studerar <strong>för att klara</strong> YKI-provet.</td></tr>
+        <tr><td><strong>Addition</strong></td><td>dessutom / utöver det</td><td>Main clause Pos 1</td><td>Maten var kall. <strong>Dessutom</strong> var servicen långsam.</td></tr>
+      </tbody>
+    </table>
+
+    <h3>3.2 The Passive Voice System</h3>
+    <!-- VISUAL DIAGRAM 4: PASSIVE VOICE SWITCH -->
+    <div class="visual-box">
+      <strong>VISUAL DIAGRAM: ACTIVE VS. PASSIVE TRANSFORMATION</strong>
+      <svg class="svg-diagram" viewBox="0 0 800 160" xmlns="http://www.w3.org/2000/svg">
+        <rect x="10" y="15" width="780" height="40" rx="6" fill="#ebf8ff" stroke="#3182ce"/>
+        <text x="25" y="40" fill="#1a365d" font-weight="bold" font-size="14">ACTIVE: Kommunen [Subject]  bygger [Verb]  ett nytt sjukhus [Object].</text>
+
+        <path d="M 400 60 L 400 85" stroke="#805ad5" stroke-width="3" marker-end="url(#arrow)"/>
+
+        <rect x="10" y="90" width="780" height="55" rx="6" fill="#faf5ff" stroke="#805ad5" stroke-width="2"/>
+        <text x="25" y="115" fill="#44337a" font-weight="bold" font-size="14">S-PASSIVE: Ett nytt sjukhus [New Subject]  byggs [S-Verb]  (av kommunen).</text>
+        <text x="25" y="135" fill="#44337a" font-weight="bold" font-size="14">BLI-PASSIVE: Ett nytt sjukhus [New Subject]  blir byggt [Bli-Participle]  (av kommunen).</text>
+      </svg>
+    </div>
+  </div>
+
+  <!-- ==================== PART 4: YKI TEMPLATES ==================== -->
+  <div id="part4" class="card card-yki">
+    <h2>PART 4: OFFICIAL YKI EXAM TASK TEMPLATES</h2>
+
+    <h3>4.1 Task 1: Informal Email Template (60–80 words)</h3>
+    <div class="template-box">
+Hej [Namn]!
+
+Hoppas att allt är bra med dig! Tack så mycket för senast, det var jätteroligt att träffas.
+
+Jag skriver till dig eftersom jag måste ändra tiden för vår middag nästa lördag. Tyvärr kan jag inte komma klockan 18.00 eftersom jag måste arbeta över på mitt jobb.
+
+Kan vi träffas klockan 20.00 istället på restaurang Kulma? Passar den tiden dig?
+
+Hör av dig snart!
+
+Hälsningar,
+[Ditt Namn]
+    </div>
+
+    <h3>4.2 Task 2: Formal Complaint Letter (80–100 words)</h3>
+    <div class="template-box">
+Rubrik: Klagomål angående defekt tvättmaskin (Ordernummer: #45892)
+
+Till Kundtjänst,
+
+Jag skriver till er för att klaga på en tvättmaskin som jag köpte från er webbutik den 12 oktober. 
+
+För det första var leveransen försenad tre dagar utan att ni informerade mig. För det andra fungerar inte centrifugeringen i maskinen alls när tvättprogrammet är klart.
+
+Detta har orsakat stor olägenhet för min familj eftersom vi inte kan tvätta våra kläder hemma.
+
+Jag kräver därför att ni åtgärdar problemet omedelbart genom att skicka en servicetekniker eller erbjuda en helt ny maskin. Om detta inte är möjligt begär jag full återbetalning.
+
+Jag motser ert snabba svar.
+
+Med vänlig hälsning,
+[Ditt Namn]
+[Telefonnummer / E-post]
+    </div>
+
+    <h3>4.3 Task 3: Opinion Essay / Public Letter (100–120 words)</h3>
+    <div class="template-box">
+Rubrik: Satsa mer på kollektivtrafiken i staden!
+
+Under de senaste åren har biljetter för kollektivtrafiken blivit allt dyrare. Enligt min mening är detta en helt felaktig utveckling som påverkar både miljön och invånarna negativt.
+
+För det första måste vi minska koldioxidutsläppen i staden. Om busstaxorna sänks kommer fler människor att välja bussen framför bilen, vilket leder till renare luft. För det andra drabbas studerande och pensionärer hårt när biljetterna är för dyra.
+
+Vissa hävdar att kommunen inte har råd att sänka priserna. Däremot anser jag att man kan finansiera detta genom att höja parkeringsavgifterna för bilar i centrum.
+
+Sammanfattningsvis vill jag betona att billig kollektivtrafik är en investering för framtiden. Därför uppmanar jag alla politiker att sänka biljettpriserna omedelbart.
+
+[Ditt Namn / En engagerad invånare]
+    </div>
+  </div>
+
+  <!-- Footer -->
+					<footer class="wrapper style1 align-center">
+						<div class="inner">
+							<ul class="icons">
+						<!--		<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li> -->
+								<li><a href="#" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
+							</ul>
+							<p>&copy; Rizvi Cloud Limited <a href="https://rizvicloud.com">Rizvi Cloud</a>.</p>
+						</div>
+					</footer>
+
+</div>
+<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+</body>
+
+
+</html>
